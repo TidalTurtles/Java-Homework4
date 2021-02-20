@@ -1,4 +1,6 @@
 
+import java.util.Scanner;
+
 public class HoltNoahAssignment4 {
 
 	public static void main(String[] args) {
@@ -12,6 +14,15 @@ public class HoltNoahAssignment4 {
 				 * This assignment is to create a license plate generator for a three state area
 				 *  based off which state the user chooses and which type of license plate they want
 				 */
+		Scanner user = new Scanner(System.in);
+		
+		System.out.println("Enter 2 character input, one for state and one for plate type:");
+		System.out.println("C: Colorado		W: Wyoming		U: Utah");
+		System.out.println("1: Regular plate	2: Adopt a Pet plate	3: Fire Fighter plate");
+		
+		String userInput = user.next();
+		
+		
 		
 		
 		
