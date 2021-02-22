@@ -28,7 +28,35 @@ public class HoltNoahAssignment4 {
 		char stateInput = upperUserInput.charAt(0);
 		char typeInput = upperUserInput.charAt(1);
 		
-		System.out.println(stateInput);
+		//variables for later
+		String stateChoice = "";
+		String typeChoice = "";
+		
+		
+		// lets validate the users input and save variables
+		if ((stateInput == 85) || (stateInput == 67) || (stateInput == 87)) {
+			if (stateInput == 85){
+				stateChoice = "Utah";
+			} else if (stateInput == 67) {
+				stateChoice = "Colorado";
+			} else {
+				stateChoice = "Wyoming";
+			}
+			
+			if ((typeInput <= 51) && (typeInput >= 49)) {
+				if (typeInput == 49) {
+					typeChoice = "Regular Plate";
+				} else if (typeInput == 50) {
+					typeChoice = "Adopt a Pet Plate";
+				} else {
+					typeChoice = "Fire Fighter Plate";
+				}
+			} else {
+				System.out.println("Invalid plate type, must be 1, 2, or 3");
+			}
+		} else {
+			System.out.println("State input invalid, must be C, W, or U");
+		}
 		
 		
 		//closing scanner (almost forgot)
