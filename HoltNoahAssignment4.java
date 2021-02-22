@@ -16,15 +16,23 @@ public class HoltNoahAssignment4 {
 				 */
 		Scanner user = new Scanner(System.in);
 		
+		//prompt user with clear directions
 		System.out.println("Enter 2 character input, one for state and one for plate type:");
 		System.out.println("C: Colorado		W: Wyoming		U: Utah");
 		System.out.println("1: Regular plate	2: Adopt a Pet plate	3: Fire Fighter plate");
 		
-		String userInput = user.next();
+		String userInput = user.nextLine();
+		String upperUserInput = userInput.toUpperCase();
+		
+		//looking at user input
+		char stateInput = upperUserInput.charAt(0);
+		char typeInput = upperUserInput.charAt(1);
+		
+		System.out.println(stateInput);
 		
 		
-		
-		
+		//closing scanner (almost forgot)
+		user.close();
 		
 	}
 
